@@ -3,8 +3,6 @@ class LinkedList:
     lenght = 0
 
     class Node:
-        element = None
-        next_node = None
 
         def __init__(self, element, next_node = None):
             self.element = element
