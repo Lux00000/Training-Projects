@@ -120,7 +120,7 @@ class DoublyLinkedList:
             line += str(current.data) + ", "
             current = current.next
         line += str(current.data) + "]"
-        print()
+        print(line)
 
 
 dll = DoublyLinkedList()
