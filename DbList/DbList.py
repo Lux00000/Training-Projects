@@ -115,10 +115,11 @@ class DoublyLinkedList:
 
     def display(self):
         current = self.head
-        
-        while current is not None:
-            print(current.data, end=" ")
+        line = "["
+        while current.next:
+            line += str(current.data) + ", "
             current = current.next
+        line += str(current.data) + "]"
         print()
 
 
