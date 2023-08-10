@@ -88,7 +88,7 @@ class DoublyLinkedList:
             self.tail = self.tail.prev
             self.tail.next = None
 
-    def remove_at(self, index):
+    def remove_indx(self, index):
         
         if index < 0:
             raise IndexError("Index out of range")
@@ -134,6 +134,6 @@ dll.display()
 
 dll.remove_first()
 dll.remove_last()
-dll.remove_at(1)
+dll.remove_indx(1)
 
 dll.display()  
